@@ -148,6 +148,20 @@
       "additionalProperties": false
     },
     {
+      "description": "Query minimum interchain query deposit",
+      "type": "object",
+      "required": [
+        "min_interchain_query_deposit"
+      ],
+      "properties": {
+        "min_interchain_query_deposit": {
+          "type": "object",
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    {
       "description": "TokenFactory query. Given a subdenom minted by a contract via [`NeutronMsg::MintTokens`](crate::bindings::msg::NeutronMsg::MintTokens), returns the full denom as used by [`BankMsg::Send`](cosmwasm_std::BankMsg::Send).",
       "type": "object",
       "required": [

@@ -50,6 +50,9 @@ pub enum NeutronQuery {
     /// Query minimum IBC fee
     MinIbcFee {},
 
+    /// Query minimum interchain query deposit
+    MinInterchainQueryDeposit {},
+
     /// TokenFactory query. Given a subdenom minted by a contract via
     /// [`NeutronMsg::MintTokens`](crate::bindings::msg::NeutronMsg::MintTokens),
     /// returns the full denom as used by [`BankMsg::Send`](cosmwasm_std::BankMsg::Send).
